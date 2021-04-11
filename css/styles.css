@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: deepskyblue;
+  position: relative;
+}
+
+.child,
+.child2 {
+  width: 100px;
+  height: 100px;
+}
+
+.child {
+  background-color: brown;
+  position: absolute;
+  top: 50px;
+  /*left: 300px; */
+  /* z-index: -1; */
+}
+
+.child2 {
+  background-color: yellow;
+  /* position: relative; */
+  z-index: 1;
+}
